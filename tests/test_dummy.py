@@ -42,7 +42,6 @@ class TestDummy(unittest.TestCase):
     def test_calculate(self):
 
         # W calculate chyba zakladamy, ze sa dobre dane...
-
         weekday = calculate(2001-200, 1, 3)
         self.assertEqual(weekday, None)
 
