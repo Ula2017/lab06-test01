@@ -51,6 +51,12 @@ class TestDummy(unittest.TestCase):
         notday = calculate(2005, 2, 45)
         self.assertEquals(notday, None)
 
+        day = calculate(2017, 2, 5)
+        self.assertEquals(day, 4)
+
+        open = calculate(2017, 2, 5)
+        self.assertNotEquals(open, 4)
+
         friday = calculate(2016, 12, 9)
         self.assertEquals(friday, 4)
 
